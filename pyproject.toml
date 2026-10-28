@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "davidkerst-finetuneplat_jd313"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告模型微调平台工程师·推理链路的追踪埋点相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "davidkerst" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://davidkerst.github.io"
+Repository = "https://github.com/davidkerst/finetuneplat_jd313"
+Issues = "https://github.com/davidkerst/finetuneplat_jd313/issues"
+
+[project.scripts]
+finetuneplat_jd313 = "finetuneplat_jd313:main"
+
+[tool.setuptools]
+py-modules = ["finetuneplat_jd313"]
